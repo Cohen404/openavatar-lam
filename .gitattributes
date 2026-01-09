@@ -1,0 +1,3 @@
+
+# do not use LFS for LAM sample zips
+src/handlers/client/h5_rendering_client/lam_samples/*.zip -filter -diff -merge

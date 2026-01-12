@@ -9,6 +9,13 @@ default:
   chat_engine:
     model_root: "models"
     concurrent_limit: 5
+    turn_config:
+      turn_provider: "turn_server"
+      urls:
+        - "turn:139.224.57.224:3478?transport=udp"
+        - "turn:139.224.57.224:3478?transport=tcp"
+      username: "admin"
+      credential: "admin"
     handler_search_path:
       - "src/handlers"
     handler_configs:
